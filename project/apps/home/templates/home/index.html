@@ -1,7 +1,41 @@
 {% extends 'home/base.html' %}
-
 {% block contenido %}
+<section class="page-section clearfix">
+    <div class="container">
+        <div class="intro">
+            <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'home/assets/img/intro.jpg' %}" alt="..." />
+            <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                <h2 class="section-heading mb-4">
+                    <span class="section-heading-upper">Café fresco</span>
+                    <span class="section-heading-lower">¡Vale la pena probarlo!</span>
+                </h2>
+                <p class="mb-3">Cada taza de nuestro café artesanal de calidad comienza con ingredientes seleccionados a mano de origen local. Una vez que lo pruebe, nuestro café será una maravillosa adición a su rutina matutina diaria, ¡lo garantizamos!</p>
+                <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" href="#!">¡Visitanos hoy!</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="page-section cta">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+                <div class="cta-inner bg-faded text-center rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">NUestra promesa</span>
+                        <span class="section-heading-lower">Para vos</span>
+                    </h2>
+                    <p class="mb-0">Cuando ingresa a nuestra tienda para comenzar el día, nos dedicamos a brindarle un servicio amable, un ambiente acogedor y, sobre todo, excelentes productos elaborados con ingredientes de la más alta calidad. Si no está satisfecho, háganoslo saber y haremos todo lo posible para hacer las cosas bien.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-<h2>Menú principal</h2>
+<header>
     
+    <h1 class="site-heading text-center text-faded d-none d-lg-block">
+        <span class="site-heading-upper text-primary mb-3">Al servicio de paladares exquisitos</span>
+        <span class="site-heading-lower">Cafeterías Grano Magno</span>
+    </h1>
+</header>
 {% endblock contenido %}
