@@ -2,13 +2,17 @@
 
 {% block contenido %}
     
-    <h1>Nuestros Productos</h1>
+    <h1 class="text-light text-center">Nuestros Productos</h1>
 
     {% block content_producto %}
 
-    <h3>Categorías de Productos</h3>
+    <h3 class="text-light">Categorías de Productos</h3>
     <a href="{% url 'producto:producto_categoria_create' %}">Crear</a>
     <a href="{% url 'producto:producto_categoria_list' %}">Listar</a><br>
+    <body>
+        
+        <!-- Otro contenido de tu página -->
+    </body>
         
     {% endblock content_producto %}
     

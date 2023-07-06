@@ -2,15 +2,14 @@
 
 {% block content_producto %}
 
-    <h2>Lista de Categorías de Productos</h2>
+    <h2 class="text-white text-center">Lista de Categorías de Productos</h2>
     {% for categoria in categorias  %}
         <ul>
-            <li>{{categoria}}</li> 
+            <li class="text-white">{{categoria}}</li> 
         </ul>
     {% endfor %}
 
-    <a href="{% url 'producto:index' %}">Volver a índice de producto</a>
+    <a href="{% url 'producto:index' %}" class="text-white">Volver a índice de producto</a>
     
 {% endblock content_producto %}
 
-<h2></h2>}

@@ -1,12 +1,21 @@
+
 {% extends 'producto/index.html' %}
 
 {% block content_producto %}
 
-    <h2>Crear Categorías de Productos</h2>
+    <h2 class="text-light text-center">Categorías de Productos</h2>
         <form method="post">
             {% csrf_token %}
-            {{form.as_p}}
-            <button type="submit">Crear</button>
+            <div class="form-group">
+                <label for="{{ form.nombre.id_for_label }}" class="text-white">Nombre:</label>
+                {{ form.nombre }}
+            </div>
+            <div class="form-group">
+                <label for="{{ form.descripcion.id_for_label }}" class="text-white">Descripción:</label>
+                {{ form.descripcion }}
+            </div>
+            <!-- Otros campos del formulario -->
+            <button type="submit" class="btn btn-primary">Crear</button>
         </form>
         <a href="{% url 'producto:index' %}">Volver a índice de producto</a>
 {% endblock content_producto %}
