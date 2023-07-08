@@ -1,0 +1,16 @@
+{% extends 'producto/index.html' %}
+
+{% block content_producto %}
+
+    <h2 class="text-white text-center">Lista de Categorías de Productos</h2>
+    {% for categoria in categorias  %}
+        <ul>
+            <li class="text-white">{{categoria.nombre}}</li>
+                <a href="{% url 'producto:producto_categoria_detail' categoria.id %}" class="btn btn-secondary">Ver detalle</a> 
+        </ul>
+    {% endfor %}
+
+    <a href="{% url 'producto:index' %}" class="text-white">Volver a índice de producto</a>
+    
+{% endblock content_producto %}
+
