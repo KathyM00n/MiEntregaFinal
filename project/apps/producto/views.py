@@ -1,6 +1,7 @@
 from django.http import HttpRequest, HttpResponse
 from django.shortcuts import redirect, render
 from django.template import context
+from django.views.generic import DetailView
 from . import forms, models
 # Create your views here.
 def index(request: HttpRequest) -> HttpResponse:
@@ -20,3 +21,12 @@ def producto_categoria_create(request):
     else:
         form = forms.ProductoCategoriaForm()
     return render(request, "producto/producto_categoria_create.html", {"form":form})
+
+#def producto_categoria_detail(request): HttpRequest , pk) -> HttpResponse:
+#    categoria = models.ProductoCategoria.objects.get(id=pk)
+#    return render(request, "producto/producto_categoria_detail.html", {"object":categoria})
+ 
+class ProductoCategoriaDetail(DetailView):
+    model = models.ProductoCategoria
+
+

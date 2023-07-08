@@ -5,7 +5,8 @@
     <h2 class="text-white text-center">Lista de Categorías de Productos</h2>
     {% for categoria in categorias  %}
         <ul>
-            <li class="text-white">{{categoria}}</li> 
+            <li class="text-white">{{categoria.nombre}}</li>
+                <a href="{% url 'producto:producto_categoria_detail' categoria.id %}" class="btn btn-secondary">Ver detalle</a> 
         </ul>
     {% endfor %}
 

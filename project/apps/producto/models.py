@@ -1,4 +1,4 @@
-from typing import Any
+#from typing import Any
 from django.db import models
 
 # Create your models here.
@@ -7,8 +7,8 @@ class ProductoCategoria(models.Model):
     descripcion = models.CharField(max_length=100, null=True, blank=True)
 
     class Meta:
-        verbose_name = "categoría de producto"
-        verbose_name_plural = "categorías de productos"
+        verbose_name = "producto"
+        verbose_name_plural = "productos"
 
     def __str__(self):
         return self.nombre
