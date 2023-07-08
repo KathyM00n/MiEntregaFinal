@@ -11,3 +11,5 @@ En producto se encuentra un formulario donde se pueden cargar productos y su des
 La app tienda no tiene contenido.
 
 Hay creado un login. Solo desde el panel del administrador pueden eliminarse usuarios.
+
+Video muestra de la aplicación web: https://drive.google.com/file/d/1X4RRlriKnRwpn3TGl9QVQYHg39jDcvPP/view?usp=sharing
